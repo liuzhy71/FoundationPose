@@ -98,7 +98,7 @@ Then modify the bash script to use this image instead of `foundationpose:latest`
 
 ```bash
 # create conda environment
-conda create -n foundationpose python=3.9
+conda create -n foundationpose python=3.10
 
 # activate conda environment
 conda activate foundationpose
@@ -120,7 +120,7 @@ python -m pip install --quiet --no-cache-dir kaolin==0.15.0 -f https://nvidia-ka
 python -m pip install --quiet --no-index --no-cache-dir pytorch3d -f https://dl.fbaipublicfiles.com/pytorch3d/packaging/wheels/py39_cu118_pyt200/download.html
 
 # Build extensions
-CMAKE_PREFIX_PATH=$CONDA_PREFIX/lib/python3.9/site-packages/pybind11/share/cmake/pybind11 bash build_all_conda.sh
+CMAKE_PREFIX_PATH=$CONDA_PREFIX/lib/python3.10/site-packages/pybind11/share/cmake/pybind11 bash build_all_conda.sh
 ```
 
 
